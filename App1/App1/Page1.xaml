@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page1">
+    <ContentPage.Content>
+        <StackLayout Padding="45" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Label Text="Would you call?" HorizontalOptions="CenterAndExpand" FontSize="30" />
+            <Label Text="Just click the button" HorizontalOptions="CenterAndExpand" FontSize="18" Margin="0,10,0,50"/>
+            <Image Source="phone.png" WidthRequest="250" HeightRequest="200"></Image>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

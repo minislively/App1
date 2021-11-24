@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"        
+             x:Class="App1.MainPage">
+    <TabBar>
+        <Tab Title="Call" Icon="call.png">
+            <ShellContent>
+                <local:Page1 Title="CallPage"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="chat" Icon="chat.png">
+            <ShellContent>
+                <local:MyListPage Title="ChatPage"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Clock" Icon="clock.png">
+            <ShellContent>
+                <local:Page3 Title="ClockPage"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Person" Icon="person.png">
+            <ShellContent>
+                <local:Page4 Title="PersonPage"/>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+
+
+</Shell>

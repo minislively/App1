@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Label Text="Login" FontSize="60" TextColor="Black" Margin="0"/>
+            <Label Text="Please sign in to continue." FontSize="15"></Label>
+            <Entry x:Name="txtUsername" Placeholder="Username" TextColor="White" PlaceholderColor="Gray" Margin="0,20"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True" TextColor="White" PlaceholderColor="Gray" Margin="0,0,0,20"></Entry>
+            <Button
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="White"
+                BackgroundColor="black"
+                BorderColor="black"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Margin="0"
+                ></Button>
+            <Button
+                Text="SignUp"
+                TextColor="Black"
+                BackgroundColor="white"
+                BorderColor="White"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                >
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

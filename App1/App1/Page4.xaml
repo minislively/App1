@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Page4">
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="10">
+            <Frame>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Information" FontAttributes="Bold" FontSize="Medium"/>
+                    <ImageButton Source="person.png" HorizontalOptions="Start"/>
+                    <Label Text="Information" FontAttributes="Bold" FontSize="Medium"/>
+                    <Label Text="Size: Maximum5MB" FontSize="Medium"/>
+                    <Label Text="Resolution: 500px X 300px" FontSize="Medium"/>
+                    <Label Text="Lorem ipsum dolor sit amet,consecteteur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation"
+                           LineBreakMode="WordWrap" FontSize="Small"/>
+                </StackLayout>
+                
+            </Frame>
+            <Frame Padding="0">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Grid RowSpacing="1" Padding="0,0,0,1" ColumnSpacing="1" BackgroundColor="LightGray">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical" BackgroundColor="White"
+                                     Padding="10"
+                                     HorizontalOptions="FillAndExpand">
+                            <ImageButton Source="call.png" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="Call" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="White" Grid.Column="1" HorizontalOptions="FillAndExpand">
+                            <ImageButton Source="chat.png" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="Chat" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                        <StackLayout BackgroundColor="White" Orientation="Vertical" Grid.Row="1" HorizontalOptions="FillAndExpand" Padding="10">
+                            <ImageButton Source="clock.png" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="Clock" FontSize="Small"
+                                   HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <StackLayout BackgroundColor="White" Orientation="Vertical" Padding="10" Grid.Column="1" Grid.Row="1" HorizontalOptions="FillAndExpand">
+                            <ImageButton Source="call.png" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="Call" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <StackLayout BackgroundColor="White" Orientation="Vertical" Grid.Row="2"  HorizontalOptions="FillAndExpand" Padding="10">
+                            <Image Source="emirates.png" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="Emirates Id" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <StackLayout BackgroundColor="White" Orientation="Vertical" Grid.Row="2" Grid.Column="1" HorizontalOptions="FillAndExpand" Padding="10">
+                            <Image Source="pcertificate.png" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="Frist Aid Certificate" FontSize="Small" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+
+                    </Grid>
+                    <Button BackgroundColor="black" TextColor="White" BorderRadius="30"
+                            Command="{Binding NextCommand}"
+                            HorizontalOptions="FillAndExpand"
+                            Margin="10"
+                            Text="Next" FontSize="Small"/>
+                </StackLayout>
+                
+            </Frame>
+
+        </StackLayout>
+        
+    </ScrollView>
+    
+</ContentPage>
